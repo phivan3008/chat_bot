@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        .chatbox {
+            margin-top: 20px;
+        }
+
+        textarea,
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Talk to the Bot 🤖</h1>
+    <form method="post">
+        <textarea name="user_input" rows="4" placeholder="Say something..."></textarea><br><br>
+        <input type="submit" value="Send">
+    </form>
+    <div class="chatbox">
+        <h2>Bot says:</h2>
+        <p>{{ bot_response }}</p>
+    </div>
+</body>
+
+</html>
